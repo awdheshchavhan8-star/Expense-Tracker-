@@ -1,0 +1,51 @@
+print("Welcome to AWD'S Expense Tracker")
+input("Please enter your email ID: ")
+input("Please enter your password: ")
+month_name = input("Enter month name: ")
+
+with open("expense_history.txt", "a") as file:
+    file.write(f"Month:  | Total Expense:  \n")
+
+
+print("Successfully saved to your history!")
+
+
+print("Regular expenses of month")
+
+expense =[]
+
+expense.append(int(input("Eectricity bills: ")))
+expense.append(int(input("Water supply bills: ")))
+expense.append(int(input("House tax bills: ")))
+expense.append(int(input("House mantainence bills: ")))
+expense.append(int(input("Wifi bills: ")))
+expense.append(int(input("Mobile recharge bills: ")))
+expense.append(int(input("OTT subscription bills: ")))
+expense.append(int(input("Society mantainence bills: ")))
+expense.append(int(input("Coocking gas bills: ")))
+expense.append(int(input("Motor gasoline bills: ")))
+expense.append(int(input("Vehicle mantainence & Insuarance bills: ")))
+expense.append(int(input("School fees bills: ")))
+expense.append(int(input("Coaching fees bills: ")))
+expense.append(int(input("Puja bills: ")))
+expense.append(int(input("Festive bills: ")))
+expense.append(int(input("Groceries bills: ")))
+expense.append(int(input("Emgency fund bills: ")))
+expense.append(int(input("Health insuarance bills: ")))
+expense.append(int(input("SIPs bills: ")))
+expense.append(int(input("Travel bills: ")))
+expense.append(int(input("Shopping bills: ")))
+expense.append(int(input("Toys bills: ")))
+expense.append(int(input(" Gifts for weddings & other occation bills: ")))
+expense.append(int(input("cloths bills: ")))
+expense.append(int(input("EMIs bills: ")))
+expense.append(int(input("Medicines bills: ")))
+expense.append(int(input("Mislenious bills: ")))
+
+
+total = sum(expense)
+print("Total expenses:",total)
+
+
+
+      
